@@ -89,7 +89,6 @@ fn crate_metadata(cargo_manifest: &Path) -> Metadata {
 	};
 
 	let mut crate_metadata_command = create_metadata_command(cargo_manifest);
-	crate_metadata_command.features(CargoOpt::AllFeatures);
 
 	let crate_metadata = crate_metadata_command
 		.exec()
